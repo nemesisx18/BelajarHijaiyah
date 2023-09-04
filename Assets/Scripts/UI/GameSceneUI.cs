@@ -1,98 +1,45 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameSceneUI : MonoBehaviour
 {
-    [SerializeField] private Button playButton;
-    [SerializeField] private GameObject selectModePanel;
+    [SerializeField] private Slider timerSlider;
 
-    [Header("Info Panel")]
-    [SerializeField] private Button infoButton;
-    [SerializeField] private Button closeInfoButton;
+    [SerializeField] private Button homeButton;
 
-    [SerializeField] private GameObject infoPanel;
+    [SerializeField] private Text highscoreText;
+    [SerializeField] private Text currentScoreText;
 
-    [Header("Exit Panel")]
-    [SerializeField] private Button exitButton;
-    [SerializeField] private Button cancelExitButton;
-    [SerializeField] private Button confirmExitButton;
+    [SerializeField] private GameObject[] healthBars;
+    
+    private Timer time;
 
-    [SerializeField] private GameObject exitPanel;
-
-    [Header("Setting Panel")]
-    [SerializeField] private Button settingButton;
-    [SerializeField] private Button audioOnButton;
-    [SerializeField] private Button audioOffButton;
-    [SerializeField] private Button closeSettingButton;
-
-    [SerializeField] private GameObject settingPanel;
-
-    private bool isActive;
+    private int healthIndex = 0;
 
     private void Start()
     {
-        playButton.onClick.AddListener(ToggleModePanel);
+        time = GetComponent<Timer>();
 
-        infoButton.onClick.AddListener(ToggleInfoPanel);
-        closeInfoButton.onClick.AddListener(ToggleInfoPanel);
-
-        exitButton.onClick.AddListener(ToggleExitPanel);
-        cancelExitButton.onClick.AddListener(ToggleExitPanel);
-        confirmExitButton.onClick.AddListener(ExitGame);
-
-        settingButton.onClick.AddListener(ToggleSettingPanel);
-        audioOnButton.onClick.AddListener(ToggleAudioSetting);
-        audioOffButton.onClick.AddListener(ToggleAudioSetting);
-        closeSettingButton.onClick.AddListener(ToggleSettingPanel);
+        homeButton.onClick.AddListener(ReturnHome);
     }
 
-    private void ToggleModePanel()
+    private void Update()
     {
-        ToggleGameObject(selectModePanel);
+        timerSlider.value = time.localTime;
     }
 
-    private void ToggleInfoPanel()
+    private void ReturnHome()
     {
-        ToggleGameObject(infoPanel);
+        SceneManager.LoadScene("Menu");
     }
 
-    private void ToggleExitPanel()
+    public void ChangeHealthValue()
     {
-        ToggleGameObject(exitPanel);
-    }
+        healthBars[healthIndex].SetActive(false);
 
-    private void ToggleSettingPanel()
-    {
-        ToggleGameObject(settingPanel);
-    }
-
-    private void ToggleGameObject(GameObject panel)
-    {
-        isActive = panel.activeSelf;
-
-        isActive = !isActive;
-
-        switch(isActive)
-        {
-            case true:
-                panel.SetActive(isActive); 
-                break;
-            case false:
-                panel.SetActive(isActive);
-                break;
-        }
-    }
-
-    private void ToggleAudioSetting()
-    {
-
-    }
-
-    private void ExitGame()
-    {
-        Application.Quit();
+        healthIndex++;
     }
 }
