@@ -9,11 +9,11 @@ public class Timer : MonoBehaviour
 
     private void OnEnable()
     {
-        
+        QuestionManager.SetNewTimer += SetTimer;
     }
     private void OnDisable()
     {
-        
+        QuestionManager.SetNewTimer -= SetTimer;
     }
 
     void Start()

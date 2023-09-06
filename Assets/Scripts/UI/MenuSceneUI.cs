@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuSceneUI : MonoBehaviour
@@ -27,6 +28,11 @@ public class MenuSceneUI : MonoBehaviour
 
     [SerializeField] private GameObject settingPanel;
 
+    [Header("Select Mode Menu")]
+    [SerializeField] private Button tebakButton;
+    [SerializeField] private Button puzzleButton;
+    [SerializeField] private Button tulisButton;
+
     private bool isActive;
 
     private void Start()
@@ -44,6 +50,10 @@ public class MenuSceneUI : MonoBehaviour
         audioOnButton.onClick.AddListener(ToggleAudioSetting);
         audioOffButton.onClick.AddListener(ToggleAudioSetting);
         closeSettingButton.onClick.AddListener(ToggleSettingPanel);
+
+        tebakButton.onClick.AddListener(LoadTebakScene);
+        puzzleButton.onClick.AddListener(LoadPuzzleScene);
+        tulisButton.onClick.AddListener(LoadTulisScene);
     }
 
     private void ToggleModePanel()
@@ -92,4 +102,24 @@ public class MenuSceneUI : MonoBehaviour
     {
         Application.Quit();
     }
+
+    private void LoadTebakScene()
+    {
+        LoadScene("TebakHijaiyah");
+    }
+
+    private void LoadPuzzleScene()
+    {
+        LoadScene("PuzzleHijaiyah");
+    }
+
+    private void LoadTulisScene()
+    {
+        LoadScene("TulisHijaiyah");
+    }
+
+    private void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }    
 }
