@@ -22,6 +22,8 @@ public class GameSceneUI : MonoBehaviour
 
     [SerializeField] private float delayTime;
 
+    [SerializeField] private bool hasScoring = true;
+
     [Header("Game Over UI")]
     [SerializeField] private Button menuButton;
     [SerializeField] private Button retryButton;
@@ -64,19 +66,22 @@ public class GameSceneUI : MonoBehaviour
     {
         timerSlider.value = time.localTime;
 
-        currentScoreText.text = "Skor: " + gameState.PlayerScore.ToString();
-
-        switch(gameState.LevelIndex)
+        if (hasScoring)
         {
-            case 1:
-                highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.TebakHijaiyahScores.ToString();
-                break;
-            case 2:
-                highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.PuzzleHijaiyahScores.ToString();
-                break;
-            case 3:
-                highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.TulisHijaiyahScores.ToString();
-                break;
+            currentScoreText.text = "Skor: " + gameState.PlayerScore.ToString();
+
+            switch (gameState.LevelIndex)
+            {
+                case 1:
+                    highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.TebakHijaiyahScores.ToString();
+                    break;
+                case 2:
+                    highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.PuzzleHijaiyahScores.ToString();
+                    break;
+                case 3:
+                    highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.TulisHijaiyahScores.ToString();
+                    break;
+            }
         }
     }
 

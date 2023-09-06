@@ -89,7 +89,7 @@ public class QuestionManager : MonoBehaviour
         }
     }
 
-    private void OnPlayerAnswered()
+    public void OnPlayerAnswered()
     {
         StartCoroutine(DelayShowQuestion());
     }
