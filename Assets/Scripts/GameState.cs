@@ -11,7 +11,7 @@ public class GameState : MonoBehaviour
     [field: SerializeField] public int PlayerScore { get; private set; } = 0;
     [field: SerializeField] public int LevelIndex { get; private set; } = 1;
 
-    public delegate void GameStateDelegate();
+    public delegate void GameStateDelegate(bool isWin);
     public static event GameStateDelegate OnGameOver;
 
     private void OnEnable()
@@ -19,6 +19,7 @@ public class GameState : MonoBehaviour
         Question.OnCorrectAnswer += AddScore;
         Question.OnWrongAnswer += ReduceChance;
 
+        Timer.OnTimeOut += GameOver;
         QuestionManager.OnQuestionEmpty += GameOver;
     }
 
@@ -27,6 +28,7 @@ public class GameState : MonoBehaviour
         Question.OnCorrectAnswer -= AddScore;
         Question.OnWrongAnswer -= ReduceChance;
 
+        Timer.OnTimeOut -= GameOver;
         QuestionManager.OnQuestionEmpty -= GameOver;
     }
 
@@ -41,7 +43,7 @@ public class GameState : MonoBehaviour
 
         if(playerChance == 0 )
         {
-            GameOver();
+            GameOver(false);
         }
     }
 
@@ -50,7 +52,7 @@ public class GameState : MonoBehaviour
         PlayerScore += questionScore;
     }
 
-    private void GameOver()
+    private void GameOver(bool isWin = true)
     {
         switch (LevelIndex)
         {
@@ -65,7 +67,13 @@ public class GameState : MonoBehaviour
                 break;
         }
 
-        OnGameOver?.Invoke();
+        if (!isWin)
+        {
+            OnGameOver?.Invoke(false);
+            return;
+        }
+
+        OnGameOver?.Invoke(true);
         
         Time.timeScale = 0;
     }

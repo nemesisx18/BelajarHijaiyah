@@ -17,6 +17,7 @@ public class GameSceneUI : MonoBehaviour
 
     [SerializeField] private GameObject wrongPopup;
     [SerializeField] private GameObject correctPopup;
+    [SerializeField] private GameObject gameWinPanel;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject[] healthBars;
 
@@ -24,12 +25,23 @@ public class GameSceneUI : MonoBehaviour
 
     [SerializeField] private bool hasScoring = true;
 
-    [Header("Game Over UI")]
+    [Header("Game Win UI")]
     [SerializeField] private Button menuButton;
-    [SerializeField] private Button retryButton;
+    [SerializeField] private Button nextLevelButton;
 
     [SerializeField] private GameObject[] stars;
-    
+
+    [SerializeField] private string nextLevelSceneName;
+
+    [Header("Game Over UI")]
+    [SerializeField] private Button menuOverButton;
+    [SerializeField] private Button retryButton;
+
+    [Header("Audio Config")]
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip benarClip;
+    [SerializeField] private AudioClip salahClip;
+
     private Timer time;
 
     private int healthIndex = 0;
@@ -59,7 +71,9 @@ public class GameSceneUI : MonoBehaviour
 
         homeButton.onClick.AddListener(ReturnHome);
         menuButton.onClick.AddListener(ReturnHome);
+        menuOverButton.onClick.AddListener(ReturnHome);
         retryButton.onClick.AddListener(RetryGame);
+        nextLevelButton.onClick.AddListener(NextLevel);
     }
 
     private void Update()
@@ -97,6 +111,11 @@ public class GameSceneUI : MonoBehaviour
         SceneManager.LoadScene(currentSceneName);
     }
 
+    private void NextLevel()
+    {
+        SceneManager.LoadScene(nextLevelSceneName);
+    }
+
     public void ChangeHealthValue()
     {
         healthBars[healthIndex].SetActive(false);
@@ -111,17 +130,28 @@ public class GameSceneUI : MonoBehaviour
 
     private void ShowFalsePanel()
     {
+        source.PlayOneShot(salahClip);
+        
         StartCoroutine(DeactiveGameobject(wrongPopup));
 
         ChangeHealthValue();
     }
     private void ShowCorrectPanel()
     {
+        source.PlayOneShot(benarClip);
+
         StartCoroutine(DeactiveGameobject(correctPopup));
     }
 
-    private void ShowGameOverPanel()
+    private void ShowGameOverPanel(bool isWin = true)
     {
+        if(!isWin)
+        {
+            gameOverPanel.SetActive(true);
+
+            return;
+        }
+        
         switch(gameState.PlayerScore)
         {
             case 60:
@@ -156,7 +186,7 @@ public class GameSceneUI : MonoBehaviour
                 break;
         }
         
-        gameOverPanel.SetActive(true);
+        gameWinPanel.SetActive(true);
     }
 
     private IEnumerator DeactiveGameobject(GameObject obj)

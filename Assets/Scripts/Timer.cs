@@ -7,6 +7,9 @@ public class Timer : MonoBehaviour
 
     public bool timerIsRunning = false;
 
+    public delegate void TimerEvent(bool isWin);
+    public static event TimerEvent OnTimeOut;
+
     private void OnEnable()
     {
         QuestionManager.SetNewTimer += SetTimer;
@@ -43,6 +46,7 @@ public class Timer : MonoBehaviour
         if(localTime < 0)
         {
             Debug.Log("Timeoutt");
+            OnTimeOut?.Invoke(false);
 
             timerIsRunning = false;
         }

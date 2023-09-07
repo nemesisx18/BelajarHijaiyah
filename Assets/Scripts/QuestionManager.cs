@@ -6,7 +6,9 @@ public class QuestionManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> questions = new List<GameObject>();
 
-    [SerializeField] private int currentLevel = 0;
+    [SerializeField] private int currentLevel;
+    [SerializeField] private int currentQuestion = 0;
+    [SerializeField] private int maxQuestion = 6;
 
     [SerializeField] private float waitTime;
 
@@ -15,7 +17,7 @@ public class QuestionManager : MonoBehaviour
     public delegate void QuestionTime(float timer);
     public static event QuestionTime SetNewTimer;
 
-    public delegate void QuestionEnd();
+    public delegate void QuestionEnd(bool isWin);
     public static event QuestionEnd OnQuestionEmpty;
 
     private void OnEnable()
@@ -38,9 +40,9 @@ public class QuestionManager : MonoBehaviour
 
     private void ShowQuestion()
     {
-        if(questions.Count == 0)
+        if(currentQuestion == maxQuestion)
         {
-            OnQuestionEmpty?.Invoke();
+            OnQuestionEmpty?.Invoke(true);
             
             Debug.Log("End");
 
@@ -51,7 +53,7 @@ public class QuestionManager : MonoBehaviour
 
         questions[randomIndex].SetActive(true);
 
-        currentLevel++;
+        currentQuestion++;
     }
 
     private void NextQuestion()
