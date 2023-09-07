@@ -706,6 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Zay
+  slotOccupied: 0
 --- !u!60 &186607701
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -993,6 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Zay
+  slotOccupied: 0
 --- !u!60 &213455500
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1645,6 +1647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Zay
+  slotOccupied: 0
 --- !u!60 &270998565
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2361,6 +2364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Ro
+  slotOccupied: 0
 --- !u!60 &443469290
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2679,6 +2683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Ro
+  slotOccupied: 0
 --- !u!60 &538120127
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2760,6 +2765,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538120124}
+  m_CullTransparentMesh: 1
+--- !u!1 &544038274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544038275}
+  - component: {fileID: 544038277}
+  - component: {fileID: 544038276}
+  m_Layer: 5
+  m_Name: Skor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &544038275
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544038274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1272641408}
+  m_Father: {fileID: 1499190116}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -330, y: -90}
+  m_SizeDelta: {x: 244, y: 95}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &544038276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544038274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: aa52513cccdc5d34ea7aaaed2ada9d86, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &544038277
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544038274}
   m_CullTransparentMesh: 1
 --- !u!1 &564591897
 GameObject:
@@ -2935,6 +3017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Zay
+  slotOccupied: 0
 --- !u!60 &628321798
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3520,6 +3603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Ro
+  slotOccupied: 0
 --- !u!60 &787919562
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3655,6 +3739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Siin
+  slotOccupied: 0
 --- !u!60 &817410481
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4791,6 +4876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Ro
+  slotOccupied: 0
 --- !u!60 &1070718906
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5372,6 +5458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Zay
+  slotOccupied: 0
 --- !u!60 &1206110510
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5597,17 +5684,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272641407}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1499190116}
-  m_RootOrder: 2
+  m_Father: {fileID: 544038275}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -306.7, y: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 30, y: 6}
   m_SizeDelta: {x: 257.478, y: 85.498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272641409
@@ -5623,7 +5710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5643,7 +5730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Skor: 000'
+  m_Text: 000
 --- !u!222 &1272641410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5858,6 +5945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Siin
+  slotOccupied: 0
 --- !u!60 &1359429092
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6069,6 +6157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Siin
+  slotOccupied: 0
 --- !u!60 &1398875477
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6501,6 +6590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: A
+  slotOccupied: 0
 --- !u!60 &1423933846
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6756,7 +6846,7 @@ RectTransform:
   m_Children:
   - {fileID: 188000233}
   - {fileID: 1614248837}
-  - {fileID: 1272641408}
+  - {fileID: 544038275}
   - {fileID: 406653603}
   - {fileID: 2110983450}
   - {fileID: 415885362}
@@ -6793,6 +6883,7 @@ MonoBehaviour:
   - {fileID: 382518902}
   - {fileID: 705486857}
   delayTime: 1.5
+  hasScoring: 1
   menuButton: {fileID: 564591899}
   retryButton: {fileID: 1667709128}
   stars:
@@ -8276,6 +8367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Siin
+  slotOccupied: 0
 --- !u!60 &1778517265
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8631,6 +8723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPuzzleName: Ba
+  slotOccupied: 0
 --- !u!60 &1795877494
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -68,7 +68,7 @@ public class GameSceneUI : MonoBehaviour
 
         if (hasScoring)
         {
-            currentScoreText.text = "Skor: " + gameState.PlayerScore.ToString();
+            currentScoreText.text = gameState.PlayerScore.ToString();
 
             switch (gameState.LevelIndex)
             {
