@@ -5,13 +5,13 @@ public class SaveData : MonoBehaviour
 {
     [SerializeField] private List<int> tebakHijaiyahScores = new List<int>();
     [SerializeField] private List<int> puzzleHijaiyahScores = new List<int>();
-    [SerializeField] private int tulisHijaiyahScores;
+    [SerializeField] private List<int> tulisHijaiyahScores = new List<int>();
 
     public static SaveData SaveInstance;
 
     public List<int> TebakHijaiyahScores => tebakHijaiyahScores;
     public List<int> PuzzleHijaiyahScores => puzzleHijaiyahScores;
-    public int TulisHijaiyahScores => tulisHijaiyahScores;
+    public List<int> TulisHijaiyahScores => tulisHijaiyahScores;
 
     private const string _prefsKey = "ScoreHijaiyah";
 
@@ -45,6 +45,14 @@ public class SaveData : MonoBehaviour
             for (int i = 0; i < 6; i++)
             {
                 puzzleHijaiyahScores.Add(0);
+            }
+        }
+
+        if(tulisHijaiyahScores.Count == 0)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                tulisHijaiyahScores.Add(0);
             }
         }
     }
@@ -90,14 +98,14 @@ public class SaveData : MonoBehaviour
 
         Save();
     }
-    public void AddTulisScore(int score)
+    public void AddTulisScore(int score, int levelIndex)
     {
-        if (score < tulisHijaiyahScores)
+        if (score < tulisHijaiyahScores[levelIndex])
         {
             return;
         }
 
-        tulisHijaiyahScores = score;
+        tulisHijaiyahScores[levelIndex] = score;
 
         Save();
     }

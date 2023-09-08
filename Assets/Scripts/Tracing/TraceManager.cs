@@ -17,6 +17,9 @@ public class TraceManager : MonoBehaviour
     private bool gameEnd = false;
     private int currentIndex = 0;
 
+    public delegate void OnTrace();
+    public static event OnTrace OnTracingDone;
+
     private void OnEnable()
     {
         Tracer.OnDoneTracing += OnTraceDone;
@@ -60,6 +63,8 @@ public class TraceManager : MonoBehaviour
         //nextLevel.SetActive(true);
 
         questionManager.OnPlayerAnswered();
+
+        OnTracingDone?.Invoke();
 
         gameObject.transform.parent.gameObject.SetActive(false);
         Debug.Log("Finished");

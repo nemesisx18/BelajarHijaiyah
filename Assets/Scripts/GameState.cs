@@ -21,6 +21,11 @@ public class GameState : MonoBehaviour
 
     private void OnEnable()
     {
+        if(ModeIndex == 3)
+        {
+            TraceManager.OnTracingDone += AddScore;
+        }
+        
         Question.OnCorrectAnswer += AddScore;
         Question.OnWrongAnswer += ReduceChance;
 
@@ -30,6 +35,11 @@ public class GameState : MonoBehaviour
 
     private void OnDisable()
     {
+        if (ModeIndex == 3)
+        {
+            TraceManager.OnTracingDone -= AddScore;
+        }
+
         Question.OnCorrectAnswer -= AddScore;
         Question.OnWrongAnswer -= ReduceChance;
 
@@ -52,7 +62,7 @@ public class GameState : MonoBehaviour
         }
     }
 
-    private void AddScore()
+    public void AddScore()
     {
         PlayerScore += questionScore;
     }
@@ -68,7 +78,7 @@ public class GameState : MonoBehaviour
                 SaveData.SaveInstance.AddPuzzleScore(PlayerScore, LevelIndex);
                 break;
             case 3:
-                SaveData.SaveInstance.AddTulisScore(PlayerScore);
+                SaveData.SaveInstance.AddTulisScore(PlayerScore, LevelIndex);
                 break;
         }
 

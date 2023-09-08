@@ -87,13 +87,13 @@ public class GameSceneUI : MonoBehaviour
             switch (gameState.ModeIndex)
             {
                 case 1:
-                    highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.TebakHijaiyahScores[gameState.LevelIndex].ToString();
+                    highscoreText.text = SaveData.SaveInstance.TebakHijaiyahScores[gameState.LevelIndex].ToString();
                     break;
                 case 2:
-                    highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.PuzzleHijaiyahScores[gameState.LevelIndex].ToString();
+                    highscoreText.text = SaveData.SaveInstance.PuzzleHijaiyahScores[gameState.LevelIndex].ToString();
                     break;
                 case 3:
-                    highscoreText.text = "Hi-Skor: " + SaveData.SaveInstance.TulisHijaiyahScores.ToString();
+                    highscoreText.text = SaveData.SaveInstance.TulisHijaiyahScores[gameState.LevelIndex].ToString();
                     break;
             }
         }
