@@ -12,6 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/TebakHijaiyah.unity
     guid: 48b7d725b8a90e945868dc91e7e41b94
   - enabled: 1
+    path: Assets/Scenes/TebakHijaiyah2.unity
+    guid: 84c22719913a02e44bc08132ca6d1f00
+  - enabled: 1
+    path: Assets/Scenes/TebakHijaiyah3.unity
+    guid: d8b850be170bfb842839e4713930c3f9
+  - enabled: 1
+    path: Assets/Scenes/TebakHijaiyah4.unity
+    guid: 10955949f7af79049b0908f8af1d7f8c
+  - enabled: 1
+    path: Assets/Scenes/TebakHijaiyah5.unity
+    guid: 97e296f408af67f4b8ee4b7a27069990
+  - enabled: 1
+    path: Assets/Scenes/TebakHijaiyah6.unity
+    guid: 25486c1b00806a74cad325b9dfbd5ce7
+  - enabled: 1
     path: Assets/Scenes/PuzzleHijaiyah.unity
     guid: 8d00cdb374fdde447adb2491bdba90b6
   - enabled: 1

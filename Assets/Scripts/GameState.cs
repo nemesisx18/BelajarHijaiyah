@@ -9,7 +9,12 @@ public class GameState : MonoBehaviour
     [SerializeField] private int questionScore = 10;
 
     [field: SerializeField] public int PlayerScore { get; private set; } = 0;
-    [field: SerializeField] public int LevelIndex { get; private set; } = 1;
+
+
+    [field: Header("Level setup")]
+    [field: SerializeField] public int ModeIndex { get; private set; } = 1;
+
+    [field: SerializeField] public int LevelIndex { get; private set; }
 
     public delegate void GameStateDelegate(bool isWin);
     public static event GameStateDelegate OnGameOver;
@@ -54,13 +59,13 @@ public class GameState : MonoBehaviour
 
     private void GameOver(bool isWin = true)
     {
-        switch (LevelIndex)
+        switch (ModeIndex)
         {
             case 1:
-                SaveData.SaveInstance.AddTebakScore(PlayerScore);
+                SaveData.SaveInstance.AddTebakScore(PlayerScore, LevelIndex);
                 break;
             case 2:
-                SaveData.SaveInstance.AddPuzzleScore(PlayerScore);
+                SaveData.SaveInstance.AddPuzzleScore(PlayerScore, LevelIndex);
                 break;
             case 3:
                 SaveData.SaveInstance.AddTulisScore(PlayerScore);

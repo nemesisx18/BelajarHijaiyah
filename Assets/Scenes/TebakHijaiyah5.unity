@@ -5107,7 +5107,7 @@ MonoBehaviour:
   questionScore: 10
   <PlayerScore>k__BackingField: 0
   <ModeIndex>k__BackingField: 1
-  <LevelIndex>k__BackingField: 0
+  <LevelIndex>k__BackingField: 4
 --- !u!4 &293342832
 Transform:
   m_ObjectHideFlags: 0
@@ -14579,7 +14579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &941781545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16571,7 +16571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEVEL 2
+  m_Text: LEVEL 6
 --- !u!222 &1096302042
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22303,7 +22303,7 @@ MonoBehaviour:
   - {fileID: 741280455}
   - {fileID: 2113729726}
   - {fileID: 148769194}
-  nextLevelSceneName: TebakHijaiyah2
+  nextLevelSceneName: TebakHijaiyah6
   menuOverButton: {fileID: 1672570350}
   retryButton: {fileID: 1297090735}
   source: {fileID: 1943251822}
@@ -26953,7 +26953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1825565317
 RectTransform:
   m_ObjectHideFlags: 0

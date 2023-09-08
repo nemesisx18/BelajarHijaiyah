@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 10
+      name: 10RO
       rect:
         serializedVersion: 2
         x: 2
@@ -267,7 +267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 9
+      name: 9DZAL
       rect:
         serializedVersion: 2
         x: 102
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8
+      name: 8DAL
       rect:
         serializedVersion: 2
         x: 209
@@ -309,7 +309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7
+      name: 7KHA
       rect:
         serializedVersion: 2
         x: 310
@@ -330,7 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6
+      name: 6HA
       rect:
         serializedVersion: 2
         x: 412
@@ -351,7 +351,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 15
+      name: 15DHOOD
       rect:
         serializedVersion: 2
         x: 0
@@ -372,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 14
+      name: 14SHOD
       rect:
         serializedVersion: 2
         x: 101
@@ -393,7 +393,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 13
+      name: 13SYIIN
       rect:
         serializedVersion: 2
         x: 208
@@ -414,7 +414,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 12
+      name: 12SIIN
       rect:
         serializedVersion: 2
         x: 306
@@ -435,7 +435,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 11
+      name: 11ZAY
       rect:
         serializedVersion: 2
         x: 411
@@ -456,7 +456,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 20
+      name: 20FA
       rect:
         serializedVersion: 2
         x: 2
@@ -477,11 +477,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 19
+      name: 19GHAIN
       rect:
         serializedVersion: 2
         x: 102
-        y: 288
+        y: 289
         width: 96
         height: 108
       alignment: 0
@@ -498,7 +498,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 18
+      name: 18AIN
       rect:
         serializedVersion: 2
         x: 204
@@ -519,7 +519,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 17
+      name: 17DZHA
       rect:
         serializedVersion: 2
         x: 306
@@ -540,7 +540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16
+      name: 16THO
       rect:
         serializedVersion: 2
         x: 408
@@ -561,7 +561,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 25
+      name: 25NUN
       rect:
         serializedVersion: 2
         x: 3
@@ -582,7 +582,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 24
+      name: 24MIM
       rect:
         serializedVersion: 2
         x: 104
@@ -603,7 +603,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 23
+      name: 23LAM
       rect:
         serializedVersion: 2
         x: 210
@@ -624,7 +624,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 22
+      name: 22KAF
       rect:
         serializedVersion: 2
         x: 310
@@ -645,7 +645,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 21
+      name: 21QOF
       rect:
         serializedVersion: 2
         x: 413
@@ -666,7 +666,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 30
+      name: 30YA
       rect:
         serializedVersion: 2
         x: 4
@@ -687,7 +687,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 29
+      name: 29HAMZAH
       rect:
         serializedVersion: 2
         x: 102
@@ -708,7 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 28
+      name: 28LAM_ALIF
       rect:
         serializedVersion: 2
         x: 212
@@ -729,7 +729,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 27
+      name: 27HA
       rect:
         serializedVersion: 2
         x: 312
@@ -750,7 +750,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 26
+      name: 26WAW
       rect:
         serializedVersion: 2
         x: 415
@@ -781,36 +781,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      10: 1868716089
-      11: 1689113410
-      12: -54900911
-      13: 1379053288
-      14: -1053000719
-      15: -1530707653
-      16: -678530956
-      17: -1738211623
-      18: -27400900
-      19: -1511215781
+      10RO: 1868716089
+      11ZAY: 1689113410
+      12SIIN: -54900911
+      13SYIIN: 1379053288
+      14SHOD: -1053000719
+      15DHOOD: -1530707653
+      16THO: -678530956
+      17DZHA: -1738211623
+      18AIN: -27400900
+      19GHAIN: -1511215781
       1_A: 1085973294
-      20: -546811883
-      21: -1442841744
-      22: 1494274748
-      23: 1340257336
-      24: -469694937
-      25: -2080751410
-      26: -897431046
-      27: 2147083707
-      28: -44909855
-      29: 77979119
+      20FA: -546811883
+      21QOF: -1442841744
+      22KAF: 1494274748
+      23LAM: 1340257336
+      24MIM: -469694937
+      25NUN: -2080751410
+      26WAW: -897431046
+      27HA: 2147083707
+      28LAM_ALIF: -44909855
+      29HAMZAH: 77979119
       2_BA: -2134831174
-      30: 787276543
+      30YA: 787276543
       3_TA: 1247836513
       4_TSA: -199678486
       5_JIM: 828456601
-      6: -334337564
-      7: 1610477349
-      8: -1122062436
-      9: 1152151959
+      6HA: -334337564
+      7KHA: 1610477349
+      8DAL: -1122062436
+      9DZAL: 1152151959
       Hijaiyah_0: 1975488699
       Hijaiyah_100: 254951244
       Hijaiyah_102: 1381690662
