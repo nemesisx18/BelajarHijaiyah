@@ -2283,8 +2283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916b8c525b8b0fd4cb452fa493eab38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tebakHijaiyahScores: 0
-  puzzleHijaiyahScores: 0
+  tebakHijaiyahScores: 
+  puzzleHijaiyahScores: 
   tulisHijaiyahScores: 0
 --- !u!4 &1432816551
 Transform:

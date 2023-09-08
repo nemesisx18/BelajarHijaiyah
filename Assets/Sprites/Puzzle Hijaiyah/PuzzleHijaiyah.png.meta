@@ -267,7 +267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_6
+      name: P2_HA
       rect:
         serializedVersion: 2
         x: 3
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_7
+      name: P2_JIM
       rect:
         serializedVersion: 2
         x: 79
@@ -309,7 +309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_8
+      name: P3_TSA
       rect:
         serializedVersion: 2
         x: 150
@@ -330,7 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_9
+      name: P2_TA
       rect:
         serializedVersion: 2
         x: 221
@@ -351,7 +351,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_10
+      name: P2_BA
       rect:
         serializedVersion: 2
         x: 291
@@ -372,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_11
+      name: P2_A
       rect:
         serializedVersion: 2
         x: 363
@@ -519,7 +519,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_18
+      name: P2_SIIN
       rect:
         serializedVersion: 2
         x: 5
@@ -540,7 +540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_19
+      name: P2_ZAY
       rect:
         serializedVersion: 2
         x: 82
@@ -561,7 +561,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_20
+      name: P2_RO
       rect:
         serializedVersion: 2
         x: 153
@@ -582,7 +582,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_21
+      name: P2_DZAL
       rect:
         serializedVersion: 2
         x: 224
@@ -603,7 +603,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_22
+      name: P2_DAL
       rect:
         serializedVersion: 2
         x: 294
@@ -624,7 +624,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_23
+      name: P2_KHA
       rect:
         serializedVersion: 2
         x: 365
@@ -792,7 +792,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_31
+      name: P2_DZHA
       rect:
         serializedVersion: 2
         x: 80
@@ -813,7 +813,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_32
+      name: P2_THO
       rect:
         serializedVersion: 2
         x: 150
@@ -834,7 +834,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_33
+      name: P2_DHOD
       rect:
         serializedVersion: 2
         x: 222
@@ -855,10 +855,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_34
+      name: P2_SHOD
       rect:
         serializedVersion: 2
-        x: 292
+        x: 293
         y: 347
         width: 62
         height: 84
@@ -876,7 +876,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_35
+      name: P2_SYIIN
       rect:
         serializedVersion: 2
         x: 364
@@ -1002,7 +1002,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_41
+      name: P2_MIM
       rect:
         serializedVersion: 2
         x: 0
@@ -1023,7 +1023,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_42
+      name: P2_LAM
       rect:
         serializedVersion: 2
         x: 76
@@ -1044,7 +1044,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_43
+      name: P2_KAF
       rect:
         serializedVersion: 2
         x: 148
@@ -1065,7 +1065,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_44
+      name: P2_QOF
       rect:
         serializedVersion: 2
         x: 218
@@ -1086,7 +1086,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_45
+      name: P2_FA
       rect:
         serializedVersion: 2
         x: 288
@@ -1107,7 +1107,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_46
+      name: P2_GHAIN
       rect:
         serializedVersion: 2
         x: 360
@@ -1254,7 +1254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_53
+      name: P2_YA
       rect:
         serializedVersion: 2
         x: 0
@@ -1275,7 +1275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_54
+      name: P2_HAMZAH
       rect:
         serializedVersion: 2
         x: 78
@@ -1296,7 +1296,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_55
+      name: P2_LAMALIF
       rect:
         serializedVersion: 2
         x: 149
@@ -1317,7 +1317,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_56
+      name: P2_H
       rect:
         serializedVersion: 2
         x: 220
@@ -1338,7 +1338,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_57
+      name: P2_WAW
       rect:
         serializedVersion: 2
         x: 290
@@ -1359,7 +1359,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_58
+      name: P2_NUN
       rect:
         serializedVersion: 2
         x: 361
@@ -1380,7 +1380,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PuzzleHijaiyah_0
+      name: P2_AIIN
       rect:
         serializedVersion: 2
         x: 3
@@ -1388,7 +1388,7 @@ TextureImporter:
         width: 67
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1411,6 +1411,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      P2_A: -1174642504
+      P2_AIIN: 895409870
+      P2_BA: -1552126029
+      P2_DAL: -1475749658
+      P2_DHOD: -1101907617
+      P2_DZAL: -670420194
+      P2_DZHA: 1902823132
+      P2_FA: -57270944
+      P2_GHAIN: -632851058
+      P2_H: 49276040
+      P2_HA: -1742043265
+      P2_HAMZAH: 1115023843
+      P2_JIM: 1566943960
+      P2_KAF: -1373156571
+      P2_KHA: -1710615210
+      P2_LAM: -1624523091
+      P2_LAMALIF: -906318069
+      P2_MIM: -1285157072
+      P2_NUN: 986999638
+      P2_QOF: 913333366
+      P2_RO: -592392587
+      P2_SHOD: -322827155
+      P2_SIIN: -1713650110
+      P2_SYIIN: -1315332389
+      P2_TA: 850446442
+      P2_THO: 453265186
+      P2_WAW: 1505670952
+      P2_YA: 1779552376
+      P2_ZAY: 1695407987
+      P3_TSA: 370994379
       P_A: 250717443
       P_AIIN: 150728318
       P_BA: -2004549629
@@ -1441,36 +1471,6 @@ TextureImporter:
       P_WAW: 1408478629
       P_YA: -1895851151
       P_ZAY: -104849830
-      PuzzleHijaiyah_0: 895409870
-      PuzzleHijaiyah_10: -1552126029
-      PuzzleHijaiyah_11: -1174642504
-      PuzzleHijaiyah_18: -1713650110
-      PuzzleHijaiyah_19: 1695407987
-      PuzzleHijaiyah_20: -592392587
-      PuzzleHijaiyah_21: -670420194
-      PuzzleHijaiyah_22: -1475749658
-      PuzzleHijaiyah_23: -1710615210
-      PuzzleHijaiyah_31: 1902823132
-      PuzzleHijaiyah_32: 453265186
-      PuzzleHijaiyah_33: -1101907617
-      PuzzleHijaiyah_34: -322827155
-      PuzzleHijaiyah_35: -1315332389
-      PuzzleHijaiyah_41: -1285157072
-      PuzzleHijaiyah_42: -1624523091
-      PuzzleHijaiyah_43: -1373156571
-      PuzzleHijaiyah_44: 913333366
-      PuzzleHijaiyah_45: -57270944
-      PuzzleHijaiyah_46: -632851058
-      PuzzleHijaiyah_53: 1779552376
-      PuzzleHijaiyah_54: 1115023843
-      PuzzleHijaiyah_55: -906318069
-      PuzzleHijaiyah_56: 49276040
-      PuzzleHijaiyah_57: 1505670952
-      PuzzleHijaiyah_58: 986999638
-      PuzzleHijaiyah_6: -1742043265
-      PuzzleHijaiyah_7: 1566943960
-      PuzzleHijaiyah_8: 370994379
-      PuzzleHijaiyah_9: 850446442
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

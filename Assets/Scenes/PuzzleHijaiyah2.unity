@@ -13285,7 +13285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &389156631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21052,7 +21052,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEVEL 2
+  m_Text: LEVEL 3
 --- !u!222 &690194227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24087,7 +24087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c77d4ebbec1b5d48b1fd49fe514feae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPuzzleName: SIIN
+  targetPuzzleName: Siin
   slotOccupied: 0
 --- !u!60 &817410481
 PolygonCollider2D:
@@ -34938,7 +34938,7 @@ MonoBehaviour:
   questionScore: 10
   <PlayerScore>k__BackingField: 0
   <ModeIndex>k__BackingField: 2
-  <LevelIndex>k__BackingField: 0
+  <LevelIndex>k__BackingField: 1
 --- !u!4 &1235771773
 Transform:
   m_ObjectHideFlags: 0
@@ -41181,7 +41181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 850446442, guid: 9ba08bff5c8c723419ae419b8eabbb80, type: 3}
+  m_Sprite: {fileID: -1345573976, guid: 9ba08bff5c8c723419ae419b8eabbb80, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -41700,7 +41700,7 @@ MonoBehaviour:
   - {fileID: 534130021}
   - {fileID: 1647977186}
   - {fileID: 1461007671}
-  nextLevelSceneName: PuzzleHijaiyah2
+  nextLevelSceneName: PuzzleHijaiyah3
   menuOverButton: {fileID: 564591899}
   retryButton: {fileID: 1667709128}
   source: {fileID: 1943251822}
@@ -47408,7 +47408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 201}
+  m_AnchoredPosition: {x: 0, y: 215}
   m_SizeDelta: {x: 216, y: 296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700572265
@@ -58333,7 +58333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2130428053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -58424,7 +58424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 201}
+  m_AnchoredPosition: {x: 0, y: 215}
   m_SizeDelta: {x: 216, y: 296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2130495205
