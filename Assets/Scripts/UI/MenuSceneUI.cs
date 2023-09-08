@@ -22,8 +22,6 @@ public class MenuSceneUI : MonoBehaviour
 
     [Header("Setting Panel")]
     [SerializeField] private Button settingButton;
-    [SerializeField] private Button audioOnButton;
-    [SerializeField] private Button audioOffButton;
     [SerializeField] private Button closeSettingButton;
 
     [SerializeField] private GameObject settingPanel;
@@ -32,6 +30,10 @@ public class MenuSceneUI : MonoBehaviour
     [SerializeField] private Button tebakButton;
     [SerializeField] private Button puzzleButton;
     [SerializeField] private Button tulisButton;
+
+    [Header("Audio settings")]
+    [SerializeField] private Button audioOnButton;
+    [SerializeField] private Button audioOffButton;
 
     private bool isActive;
 
@@ -54,6 +56,20 @@ public class MenuSceneUI : MonoBehaviour
         tebakButton.onClick.AddListener(LoadTebakScene);
         puzzleButton.onClick.AddListener(LoadPuzzleScene);
         tulisButton.onClick.AddListener(LoadTulisScene);
+    }
+
+    private void Update()
+    {
+        if(ConfigData.configInstance.isBgmOn)
+        {
+            audioOnButton.interactable = false;
+            audioOffButton.interactable = true;
+        }
+        else
+        {
+            audioOnButton.interactable= true;
+            audioOffButton.interactable = false;
+        }
     }
 
     private void ToggleModePanel()
@@ -95,7 +111,7 @@ public class MenuSceneUI : MonoBehaviour
 
     private void ToggleAudioSetting()
     {
-
+        ConfigData.configInstance.ToggleMusic();
     }
 
     private void ExitGame()

@@ -7,11 +7,19 @@ public class SaveData : MonoBehaviour
     [SerializeField] private List<int> puzzleHijaiyahScores = new List<int>();
     [SerializeField] private List<int> tulisHijaiyahScores = new List<int>();
 
+    [SerializeField] private int totalScoreTebak;
+    [SerializeField] private int totalScorePuzzle;
+    [SerializeField] private int totalScoreTulis;
+
     public static SaveData SaveInstance;
 
     public List<int> TebakHijaiyahScores => tebakHijaiyahScores;
     public List<int> PuzzleHijaiyahScores => puzzleHijaiyahScores;
     public List<int> TulisHijaiyahScores => tulisHijaiyahScores;
+
+    public int TotalScoreTebak => totalScoreTebak;
+    public int TotalScorePuzzle => totalScorePuzzle;
+    public int TotalScoreTulis => totalScoreTulis;
 
     private const string _prefsKey = "ScoreHijaiyah";
 
@@ -85,6 +93,11 @@ public class SaveData : MonoBehaviour
 
         tebakHijaiyahScores[levelIndex] = score;
 
+        for (int i = 0; i < tebakHijaiyahScores.Count; i++)
+        {
+            totalScoreTebak += tebakHijaiyahScores[i]; 
+        }
+
         Save();
     }
     public void AddPuzzleScore(int score, int levelIndex)
@@ -96,6 +109,11 @@ public class SaveData : MonoBehaviour
 
         puzzleHijaiyahScores[levelIndex] = score;
 
+        for (int i = 0; i < puzzleHijaiyahScores.Count; i++)
+        {
+            totalScorePuzzle += puzzleHijaiyahScores[i];
+        }
+
         Save();
     }
     public void AddTulisScore(int score, int levelIndex)
@@ -106,6 +124,11 @@ public class SaveData : MonoBehaviour
         }
 
         tulisHijaiyahScores[levelIndex] = score;
+
+        for (int i = 0; i < tulisHijaiyahScores.Count; i++)
+        {
+            totalScoreTulis += tulisHijaiyahScores[i];
+        }
 
         Save();
     }

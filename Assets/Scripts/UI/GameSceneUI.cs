@@ -8,10 +8,9 @@ public class GameSceneUI : MonoBehaviour
 {
     [SerializeField] private GameState gameState;
     
-    [SerializeField] private Slider timerSlider;
-
     [SerializeField] private Button homeButton;
 
+    [SerializeField] private Text timerText;
     [SerializeField] private Text highscoreText;
     [SerializeField] private Text currentScoreText;
 
@@ -26,6 +25,8 @@ public class GameSceneUI : MonoBehaviour
     [SerializeField] private bool hasScoring = true;
 
     [Header("Game Win UI")]
+    [SerializeField] private Text scoreModeText;
+
     [SerializeField] private Button menuButton;
     [SerializeField] private Button nextLevelButton;
 
@@ -34,6 +35,8 @@ public class GameSceneUI : MonoBehaviour
     [SerializeField] private string nextLevelSceneName;
 
     [Header("Game Over UI")]
+    [SerializeField] private Text scoreOverText;
+
     [SerializeField] private Button menuOverButton;
     [SerializeField] private Button retryButton;
 
@@ -48,8 +51,6 @@ public class GameSceneUI : MonoBehaviour
 
     private void OnEnable()
     {
-        QuestionManager.SetNewTimer += SetTimerSlider;
-
         Question.OnWrongAnswer += ShowFalsePanel;
         Question.OnCorrectAnswer += ShowCorrectPanel;
 
@@ -57,8 +58,6 @@ public class GameSceneUI : MonoBehaviour
     }
     private void OnDisable()
     {
-        QuestionManager.SetNewTimer -= SetTimerSlider;
-
         Question.OnWrongAnswer -= ShowFalsePanel;
         Question.OnCorrectAnswer -= ShowCorrectPanel;
 
@@ -78,22 +77,25 @@ public class GameSceneUI : MonoBehaviour
 
     private void Update()
     {
-        timerSlider.value = time.localTime;
+        time.DisplayTime(time.localTime, timerText);
 
         if (hasScoring)
         {
+            scoreModeText.text = "Skor: " + gameState.PlayerScore.ToString();
+            scoreOverText.text = "Skor: " + gameState.PlayerScore.ToString();
+
             currentScoreText.text = gameState.PlayerScore.ToString();
 
             switch (gameState.ModeIndex)
             {
                 case 1:
-                    highscoreText.text = SaveData.SaveInstance.TebakHijaiyahScores[gameState.LevelIndex].ToString();
+                    highscoreText.text = SaveData.SaveInstance.TotalScoreTebak.ToString();
                     break;
                 case 2:
-                    highscoreText.text = SaveData.SaveInstance.PuzzleHijaiyahScores[gameState.LevelIndex].ToString();
+                    highscoreText.text = SaveData.SaveInstance.TotalScorePuzzle.ToString();
                     break;
                 case 3:
-                    highscoreText.text = SaveData.SaveInstance.TulisHijaiyahScores[gameState.LevelIndex].ToString();
+                    highscoreText.text = SaveData.SaveInstance.TotalScoreTulis.ToString();
                     break;
             }
         }
@@ -121,11 +123,6 @@ public class GameSceneUI : MonoBehaviour
         healthBars[healthIndex].SetActive(false);
 
         healthIndex++;
-    }
-
-    private void SetTimerSlider(float value)
-    {
-        timerSlider.maxValue = value;
     }
 
     private void ShowFalsePanel()
