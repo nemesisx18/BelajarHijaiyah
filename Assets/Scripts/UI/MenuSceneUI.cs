@@ -27,9 +27,17 @@ public class MenuSceneUI : MonoBehaviour
     [SerializeField] private GameObject settingPanel;
 
     [Header("Select Mode Menu")]
-    [SerializeField] private Button tebakButton;
-    [SerializeField] private Button puzzleButton;
-    [SerializeField] private Button tulisButton;
+    [SerializeField] private GameObject panelModeTebak;
+    [SerializeField] private GameObject panelModePuzzle;
+    [SerializeField] private GameObject panelModeTulis;
+
+    [SerializeField] private Button[] menuModeButton;
+    [SerializeField] private Button selectModeTebak;
+    [SerializeField] private Button selectModePuzzle;
+    [SerializeField] private Button selectModeTulis;
+    [SerializeField] private Button playModeTebakButton;
+    [SerializeField] private Button playModePuzzleButton;
+    [SerializeField] private Button playModeTulisButton;
 
     [Header("Audio settings")]
     [SerializeField] private Button audioOnButton;
@@ -53,9 +61,16 @@ public class MenuSceneUI : MonoBehaviour
         audioOffButton.onClick.AddListener(ToggleAudioSetting);
         closeSettingButton.onClick.AddListener(ToggleSettingPanel);
 
-        tebakButton.onClick.AddListener(LoadTebakScene);
-        puzzleButton.onClick.AddListener(LoadPuzzleScene);
-        tulisButton.onClick.AddListener(LoadTulisScene);
+        for (int i = 0; i < menuModeButton.Length; i++)
+        {
+            menuModeButton[i].onClick.AddListener(BackToMenu);
+        }
+        selectModeTebak.onClick.AddListener(ToggleModeTebak);
+        selectModePuzzle.onClick.AddListener(ToggleModePuzzle);
+        selectModeTulis.onClick.AddListener(ToggleModeTulis);
+        playModeTebakButton.onClick.AddListener(LoadTebakScene);
+        playModePuzzleButton.onClick.AddListener(LoadPuzzleScene);
+        playModeTulisButton.onClick.AddListener(LoadTulisScene);
     }
 
     private void Update()
@@ -92,6 +107,21 @@ public class MenuSceneUI : MonoBehaviour
         ToggleGameObject(settingPanel);
     }
 
+    private void ToggleModeTebak()
+    {
+        ToggleGameObject(panelModeTebak);
+    }
+
+    private void ToggleModePuzzle()
+    {
+        ToggleGameObject(panelModePuzzle);
+    }
+
+    private void ToggleModeTulis()
+    {
+        ToggleGameObject(panelModeTulis);
+    }
+
     private void ToggleGameObject(GameObject panel)
     {
         isActive = panel.activeSelf;
@@ -117,6 +147,11 @@ public class MenuSceneUI : MonoBehaviour
     private void ExitGame()
     {
         Application.Quit();
+    }
+
+    private void BackToMenu()
+    {
+        LoadScene("Menu");
     }
 
     private void LoadTebakScene()
