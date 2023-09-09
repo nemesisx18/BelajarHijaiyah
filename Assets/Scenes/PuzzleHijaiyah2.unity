@@ -1629,6 +1629,7 @@ GameObject:
   - component: {fileID: 57409909}
   - component: {fileID: 57409911}
   - component: {fileID: 57409910}
+  - component: {fileID: 57409912}
   m_Layer: 5
   m_Name: 4
   m_TagString: Untagged
@@ -1688,6 +1689,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &57409912
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57409908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &65848830
 GameObject:
   m_ObjectHideFlags: 0
@@ -7312,6 +7329,7 @@ GameObject:
   - component: {fileID: 226648708}
   - component: {fileID: 226648710}
   - component: {fileID: 226648709}
+  - component: {fileID: 226648711}
   m_Layer: 5
   m_Name: 3
   m_TagString: Untagged
@@ -7371,6 +7389,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &226648711
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226648707}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &229849209
 GameObject:
   m_ObjectHideFlags: 0
@@ -24937,6 +24971,7 @@ GameObject:
   - component: {fileID: 856418184}
   - component: {fileID: 856418186}
   - component: {fileID: 856418185}
+  - component: {fileID: 856418187}
   m_Layer: 5
   m_Name: Popup
   m_TagString: Untagged
@@ -25002,6 +25037,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856418183}
   m_CullTransparentMesh: 1
+--- !u!111 &856418187
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856418183}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &857081604
 GameObject:
   m_ObjectHideFlags: 0
@@ -28467,6 +28518,7 @@ GameObject:
   - component: {fileID: 990761105}
   - component: {fileID: 990761107}
   - component: {fileID: 990761106}
+  - component: {fileID: 990761108}
   m_Layer: 5
   m_Name: Popup
   m_TagString: Untagged
@@ -28532,6 +28584,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990761104}
   m_CullTransparentMesh: 1
+--- !u!111 &990761108
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990761104}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1009121589
 GameObject:
   m_ObjectHideFlags: 0
@@ -33477,6 +33545,7 @@ GameObject:
   - component: {fileID: 1164322545}
   - component: {fileID: 1164322547}
   - component: {fileID: 1164322546}
+  - component: {fileID: 1164322548}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -33536,6 +33605,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &1164322548
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164322544}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1167564353
 GameObject:
   m_ObjectHideFlags: 0
@@ -45669,6 +45754,7 @@ GameObject:
   - component: {fileID: 1639341069}
   - component: {fileID: 1639341071}
   - component: {fileID: 1639341070}
+  - component: {fileID: 1639341072}
   m_Layer: 5
   m_Name: 8
   m_TagString: Untagged
@@ -45728,6 +45814,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &1639341072
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639341068}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1640702827
 GameObject:
   m_ObjectHideFlags: 0
@@ -48550,6 +48652,7 @@ GameObject:
   - component: {fileID: 1723321918}
   - component: {fileID: 1723321920}
   - component: {fileID: 1723321919}
+  - component: {fileID: 1723321921}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -48609,6 +48712,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &1723321921
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723321917}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1725688042
 GameObject:
   m_ObjectHideFlags: 0
@@ -53473,6 +53592,7 @@ GameObject:
   - component: {fileID: 1929531474}
   - component: {fileID: 1929531476}
   - component: {fileID: 1929531475}
+  - component: {fileID: 1929531477}
   m_Layer: 5
   m_Name: 5
   m_TagString: Untagged
@@ -53532,6 +53652,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &1929531477
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929531473}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1932877530
 GameObject:
   m_ObjectHideFlags: 0
@@ -58738,6 +58874,7 @@ GameObject:
   - component: {fileID: 2128350977}
   - component: {fileID: 2128350979}
   - component: {fileID: 2128350978}
+  - component: {fileID: 2128350980}
   m_Layer: 5
   m_Name: 6
   m_TagString: Untagged
@@ -58797,6 +58934,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &2128350980
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128350976}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2130428052
 GameObject:
   m_ObjectHideFlags: 0
@@ -59014,6 +59167,7 @@ GameObject:
   - component: {fileID: 2130874085}
   - component: {fileID: 2130874087}
   - component: {fileID: 2130874086}
+  - component: {fileID: 2130874088}
   m_Layer: 5
   m_Name: 7
   m_TagString: Untagged
@@ -59073,6 +59227,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrectAnswer: 0
   isTebakMode: 0
+--- !u!111 &2130874088
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130874084}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c87da0ad63b3dea49ba5843944a43178, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2131575164
 GameObject:
   m_ObjectHideFlags: 0

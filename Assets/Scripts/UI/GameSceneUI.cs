@@ -133,7 +133,7 @@ public class GameSceneUI : MonoBehaviour
 
         ChangeHealthValue();
     }
-    private void ShowCorrectPanel()
+    public void ShowCorrectPanel()
     {
         source.PlayOneShot(benarClip);
 

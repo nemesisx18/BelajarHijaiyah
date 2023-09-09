@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,10 +6,13 @@ using UnityEngine.UI;
 public class TraceManager : MonoBehaviour
 {
     [SerializeField] private QuestionManager questionManager;
+    [SerializeField] private GameSceneUI gameSceneUI;
     
     [SerializeField] private List<Image> traces = new List<Image>();
 
     [SerializeField] private GameObject nextLevel;
+
+    [SerializeField] private float delayTime = 1.5f;
 
     [SerializeField] private int traceCount;
 
@@ -63,10 +67,17 @@ public class TraceManager : MonoBehaviour
         //nextLevel.SetActive(true);
 
         questionManager.OnPlayerAnswered();
+        gameSceneUI.ShowCorrectPanel();
 
         OnTracingDone?.Invoke();
 
-        gameObject.transform.parent.gameObject.SetActive(false);
         Debug.Log("Finished");
+    }
+
+    private IEnumerator DelayChange()
+    {
+        yield return new WaitForSeconds(delayTime);
+
+        gameObject.transform.parent.gameObject.SetActive(false);
     }
 }
