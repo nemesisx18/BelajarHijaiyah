@@ -8,8 +8,11 @@ public class SaveData : MonoBehaviour
     [SerializeField] private List<int> tulisHijaiyahScores = new List<int>();
 
     [SerializeField] private int totalScoreTebak;
+    [SerializeField] private int totalTempScoreTebak;
     [SerializeField] private int totalScorePuzzle;
+    [SerializeField] private int totalTempScorePuzzle;
     [SerializeField] private int totalScoreTulis;
+    [SerializeField] private int totalTempScoreTulis;
 
     public static SaveData SaveInstance;
 
@@ -56,13 +59,38 @@ public class SaveData : MonoBehaviour
             }
         }
 
-        if(tulisHijaiyahScores.Count == 0)
+        if (tulisHijaiyahScores.Count == 0)
         {
             for (int i = 0; i < 5; i++)
             {
                 tulisHijaiyahScores.Add(0);
             }
         }
+
+        ResetScoreTebak();
+        ResetScorePuzzle();
+        ResetScoreTulis();
+    }
+
+    public void ResetScoreTebak()
+    {
+        totalTempScoreTebak = 0;
+
+        Save();
+    }
+
+    public void ResetScorePuzzle()
+    {
+        totalTempScorePuzzle = 0;
+
+        Save();
+    }
+
+    public void ResetScoreTulis()
+    {
+        totalTempScoreTulis = 0;
+
+        Save();
     }
 
     public void Load()
@@ -86,48 +114,48 @@ public class SaveData : MonoBehaviour
 
     public void AddTebakScore(int score, int levelIndex)
     {
-        if (score < tebakHijaiyahScores[levelIndex])
-        {
-            return;
-        }
-
         tebakHijaiyahScores[levelIndex] = score;
 
-        for (int i = 0; i < tebakHijaiyahScores.Count; i++)
+        totalTempScoreTebak += tebakHijaiyahScores[levelIndex];
+
+        if (levelIndex == 5)
         {
-            totalScoreTebak += tebakHijaiyahScores[i]; 
+            if (totalTempScoreTebak > totalScoreTebak)
+            {
+                totalScoreTebak = totalTempScoreTebak;
+            }
         }
 
         Save();
     }
     public void AddPuzzleScore(int score, int levelIndex)
     {
-        if (score < puzzleHijaiyahScores[levelIndex])
-        {
-            return;
-        }
-
         puzzleHijaiyahScores[levelIndex] = score;
 
-        for (int i = 0; i < puzzleHijaiyahScores.Count; i++)
+        totalTempScorePuzzle += puzzleHijaiyahScores[levelIndex];
+
+        if (levelIndex == 5)
         {
-            totalScorePuzzle += puzzleHijaiyahScores[i];
+            if (totalTempScorePuzzle > totalScorePuzzle)
+            {
+                totalScorePuzzle = totalTempScorePuzzle;
+            }
         }
 
         Save();
     }
     public void AddTulisScore(int score, int levelIndex)
     {
-        if (score < tulisHijaiyahScores[levelIndex])
-        {
-            return;
-        }
-
         tulisHijaiyahScores[levelIndex] = score;
 
-        for (int i = 0; i < tulisHijaiyahScores.Count; i++)
+        totalTempScoreTulis += tulisHijaiyahScores[levelIndex];
+
+        if (levelIndex == 4)
         {
-            totalScoreTulis += tulisHijaiyahScores[i];
+            if (totalTempScoreTulis > totalScoreTulis)
+            {
+                totalScoreTulis = totalTempScoreTulis;
+            }
         }
 
         Save();

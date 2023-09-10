@@ -156,16 +156,22 @@ public class MenuSceneUI : MonoBehaviour
 
     private void LoadTebakScene()
     {
+        SaveData.SaveInstance.ResetScoreTebak();
+        
         LoadScene("TebakHijaiyah");
     }
 
     private void LoadPuzzleScene()
     {
+        SaveData.SaveInstance.ResetScorePuzzle();
+
         LoadScene("PuzzleHijaiyah");
     }
 
     private void LoadTulisScene()
     {
+        SaveData.SaveInstance.ResetScoreTulis();
+
         LoadScene("TulisHijaiyah");
     }
 

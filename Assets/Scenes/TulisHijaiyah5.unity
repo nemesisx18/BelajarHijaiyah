@@ -20887,7 +20887,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEVEL 2
+  m_Text: LEVEL 5
 --- !u!222 &427951577
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50542,7 +50542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: -285}
+  m_AnchoredPosition: {x: 0, y: -285}
   m_SizeDelta: {x: 244, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095052120
@@ -53073,7 +53073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1143075656
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56989,7 +56989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1223006328
 RectTransform:
   m_ObjectHideFlags: 0
@@ -71453,7 +71453,7 @@ MonoBehaviour:
   - {fileID: 961351168}
   - {fileID: 1561269238}
   - {fileID: 1412038672}
-  nextLevelSceneName: TulisHijaiyah2
+  nextLevelSceneName: Menu
   scoreOverText: {fileID: 1815232567}
   menuOverButton: {fileID: 1168990722}
   retryButton: {fileID: 2007632473}
@@ -74027,7 +74027,7 @@ MonoBehaviour:
   questionScore: 10
   <PlayerScore>k__BackingField: 0
   <ModeIndex>k__BackingField: 3
-  <LevelIndex>k__BackingField: 0
+  <LevelIndex>k__BackingField: 4
 --- !u!4 &1560725450
 Transform:
   m_ObjectHideFlags: 0
@@ -88583,7 +88583,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Selamat kamu telah menyelesaikan level 1
+  m_Text: Selamat kamu telah menyelesaikan level 5
 --- !u!222 &1889600679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -91734,7 +91734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1966978375
 RectTransform:
   m_ObjectHideFlags: 0

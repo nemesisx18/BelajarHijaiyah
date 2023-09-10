@@ -3441,8 +3441,11 @@ MonoBehaviour:
   puzzleHijaiyahScores: 
   tulisHijaiyahScores: 
   totalScoreTebak: 0
+  totalTempScoreTebak: 0
   totalScorePuzzle: 0
+  totalTempScorePuzzle: 0
   totalScoreTulis: 0
+  totalTempScoreTulis: 0
 --- !u!4 &1432816551
 Transform:
   m_ObjectHideFlags: 0
