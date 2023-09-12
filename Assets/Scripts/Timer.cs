@@ -13,10 +13,16 @@ public class Timer : MonoBehaviour
     private void OnEnable()
     {
         QuestionManager.SetNewTimer += SetTimer;
+
+        Question.OnCorrectAnswer += StopTimer;
+        Question.OnWrongAnswer += StopTimer;
     }
     private void OnDisable()
     {
         QuestionManager.SetNewTimer -= SetTimer;
+
+        Question.OnCorrectAnswer -= StopTimer;
+        Question.OnWrongAnswer -= StopTimer;
     }
 
     void Start()
