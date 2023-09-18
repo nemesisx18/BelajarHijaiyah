@@ -103,6 +103,8 @@ public class GameSceneUI : MonoBehaviour
 
     private void ReturnHome()
     {
+        Time.timeScale = 1;
+
         SceneManager.LoadScene("Menu");
     }
 
